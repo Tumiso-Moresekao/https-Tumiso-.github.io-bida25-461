@@ -1,0 +1,104 @@
+/* GENERAL PAGE STYLE */
+h1, h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 10px black;
+   font-size:  50px;
+}
+body {
+  background-image:url("background\ image.jpg");
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #c5b8ca14 
+  padding: 30px;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #ffffff 
+  margin-left: 15px;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #ffb6c1 
+}
+
+/* HEADINGS */
+h1, h2, h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* PRODUCT CARDS */
+.card {
+  background-color: #6c5b6c4c;
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-body {
+  text-align: center;
+}
+
+/* BUTTONS */
+.btn {
+  background-color: #ffb6c1;
+  border: none;
+  color: black;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: 0.3s;
+  
+}
+
+.btn:hover {
+  background-color: #ff69b4;
+  color: white;
+}
+
+/* FORM STYLING */
+form {
+  max-width: 400px;
+  margin: auto;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px #ffb6c1;
+}
+
+/* FOOTER */
+footer {
+  background-color: #2c003e;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 10px;
+}
