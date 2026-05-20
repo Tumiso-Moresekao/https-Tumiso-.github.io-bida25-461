@@ -1,0 +1,242 @@
+/* GENERAL PAGE STYLE */
+h1, h2 {
+  color: white;
+  text-align: center;
+  font-family: arial;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 10px white;
+   font-size:  50px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+body{
+  color: black;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: -1;
+}
+
+/*DARK OVERLAY*/
+hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.007); 
+    z-index: 0;
+}
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background-color: #c5b8ca14 
+  padding: 30px;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #ffffff 
+  margin-left: 15px;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #ffb6c1 
+}
+
+/* HEADINGS */
+h1, h2, h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.box{
+  padding: 20px;
+  background-color: peachpuff;
+  border: 20px solid pink;
+}
+
+/*GRID CONTAIER*/
+.products-cointainer{
+  display: grid;
+
+/* creates responsive columns */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+/* TEXT OVERLAY */
+.product-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.07);
+    color: black;
+}
+
+/* TEXT STYLE */
+.product-info h3 {
+    margin: 0;
+    font-size: 18px;
+    color: black;
+}
+
+/* PRODUCT CARDS */
+.products{
+    padding:60px 20px;
+}
+
+.products h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:45px;
+    font-weight:bold;
+}
+
+.card {
+  background-color: #6c5b6c4c;
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img-top {
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-body {
+  text-align: center;
+}
+
+/* BUTTONS */
+.btn {
+  background-color: #ffb6c1;
+  border: none;
+  color: rgba(90, 82, 82, 0.677);
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: 0.3s;
+  
+}
+
+.btn:hover {
+  background-color: #ff69b4;
+  color: white;
+}
+
+/* FORM STYLING */
+form {
+  max-width: 400px;
+  margin: auto;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px #ffb6c1;
+}
+
+/* FOOTER */
+footer {
+  background-color: rgba(37, 3, 20, 0.726);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+/* Hero section */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.card img {
+    transition: transform 0.3s ease;
+}
+
+.card img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Text styling */
+.main-text {
+    font-size: 24px;
+    font-weight: bold;
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+}
+
+.sub-text {
+    font-size: 18px;
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+    animation-delay: 0.5s;
+}
+.text-section {
+    background-color: black;
+}
+.logo{
+   width:180px;
+   margin-left:20px;
+    margin-top:10px;
+   filter: drop-shadow(0 5px 10px rgba(0,0,0,0.3));
+}
